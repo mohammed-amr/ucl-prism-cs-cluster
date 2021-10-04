@@ -45,7 +45,7 @@ See an output file in ```~/runLog```!
 
 ## Copying Job Data
 
-Storing data in your home directory is a nono. Accessing data in your home directory from a node is a bigger nono. You'll get mad emails asking why you did that. Instead, copy any data you need to the node where the processing happens. Here's a handy script that copies data from ```/home/YOUCLUSTERUSERNAME/datasets/testData.zip``` to the scratch space of the machine where your job will run:
+Storing data in your home directory is a nono. Accessing data in your home directory from a run node is a bigger nono. You'll get mad emails asking why you did that. Instead, copy any data you need to the node where the processing happens. Here's a handy script that copies data from ```/home/YOUCLUSTERUSERNAME/datasets/testData.zip``` to the scratch space of the machine where your job will run:
 
 ```
 #!/bin/bash
