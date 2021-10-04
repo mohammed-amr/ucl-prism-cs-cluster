@@ -3,7 +3,7 @@
 UNIQUEID=$(uuidgen)
 UNIQUEID=${UNIQUEID:0:13}
 
-mkdir /scratch0/mabdelfa/
+mkdir /scratch0/YOUCLUSTERUSERNAME/
 BASEDIR="/scratch0/YOUCLUSTERUSERNAME/"
 
 COPYDIR="${BASEDIR}${UNIQUEID}/"
