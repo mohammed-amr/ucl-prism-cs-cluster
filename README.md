@@ -43,7 +43,7 @@ Schedule the script via:
 
 See an output file in ```~/runLog```!
 
-```Copying Data```
+## Copying Job Data
 
 Storing data in your home directory is a nono. Accessing data in your home directory from a node is a bigger nono. You'll get mad emails asking why you did that. Instead, copy any data you need to the node where the processing happens. Here's a handy script:
 
