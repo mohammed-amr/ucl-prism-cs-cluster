@@ -45,7 +45,7 @@ See an output file in ```~/runLog```!
 
 ## Copying Job Data
 
-Storing data in your home directory is a nono. Accessing data in your home directory from a node is a bigger nono. You'll get mad emails asking why you did that. Instead, copy any data you need to the node where the processing happens. Here's a handy script:
+Storing data in your home directory is a nono. Accessing data in your home directory from a node is a bigger nono. You'll get mad emails asking why you did that. Instead, copy any data you need to the node where the processing happens. Here's a handy script that copies data from ```/home/YOUCLUSTERUSERNAME/datasets/testData.zip``` to the scratch space of the machine where your job will run:
 
 ```
 #!/bin/bash
@@ -53,13 +53,13 @@ Storing data in your home directory is a nono. Accessing data in your home direc
 UNIQUEID=$(uuidgen)
 UNIQUEID=${UNIQUEID:0:13}
 
-mkdir /scratch0/YOUCLUSTERNAME/
-BASEDIR="/scratch0/YOUCLUSTERNAME/"
+mkdir /scratch0/YOUCLUSTERUSERNAME/
+BASEDIR="/scratch0/YOUCLUSTERUSERNAME/"
 
 COPYDIR="${BASEDIR}${UNIQUEID}/"
 mkdir $COPYDIR
 
-rsync -ar --info=progress2 /home/YOUCLUSTERNAME/datasets/testData.zip $COPYDIR
+rsync -ar --info=progress2 /home/YOUCLUSTERUSERNAME/datasets/testData.zip $COPYDIR
 
 cd $COPYDIR
 
