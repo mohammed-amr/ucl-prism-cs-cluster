@@ -1,4 +1,4 @@
-Example cs cluster scripts for incomming MSc students.
+Example CS cluster scripts for incomming MSc students.
 
 ## Prerequisites:
 - Access to a cluster account through https://hpc.cs.ucl.ac.uk/account-form/
