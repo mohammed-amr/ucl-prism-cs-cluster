@@ -4,12 +4,12 @@ UNIQUEID=$(uuidgen)
 UNIQUEID=${UNIQUEID:0:13}
 
 mkdir /scratch0/mabdelfa/
-BASEDIR="/scratch0/mabdelfa/"
+BASEDIR="/scratch0/YOUCLUSTERUSERNAME/"
 
 COPYDIR="${BASEDIR}${UNIQUEID}/"
 mkdir $COPYDIR
 
-rsync -ar --info=progress2 /home/mabdelfa/datasets/testData.zip $COPYDIR
+rsync -ar --info=progress2 /home/YOUCLUSTERUSERNAME/datasets/testData.zip $COPYDIR
 
 cd $COPYDIR
 
