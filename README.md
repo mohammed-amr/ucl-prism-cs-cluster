@@ -84,9 +84,11 @@ Your qsub file should now call the script to copy your data and launch your pyth
 
 ## Misc
 Handy tool for pretty printing status:
+
 ```qstat -ext -xml | tr '\n' ' ' | sed 's#<job_list[^>]*>#\n#g'   | sed 's#<[^>]*>##g' | grep " " | column -t```
 
 Interactive Session with one GPU:
+
 ```qrsh -l tmem=2G,gpu=true,h_rt=00:05:00,tscratch=70G -pe gpu 1```
 
 
